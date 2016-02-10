@@ -46,8 +46,8 @@ $(document).ready(function () {
             correctTotal++;
             //console.log(correctTotal);
         }
-        $('#result_msg').append("<p>Q: " + questions[questionNum].question + "<br />");
-        $('#result_msg').append("A: " + questions[questionNum].correctDetails + "</p>");
+        $('#result_msg').append("<p class='results-question'>Q: " + questions[questionNum].question + "</p>");
+        $('#result_msg').append("<p class='results-answer'>A: " + questions[questionNum].correctDetails + "</p>");
 
         //quiz is finished, show result-section
         if ((questionNum + 1) == questionTotal) {

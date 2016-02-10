@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>The Ultimate Fender Guitar Quiz</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="background-image"></div>
+    <div class="container background-image">
+        <!--<div class="background-image"></div> -->
         <header class="banner-section">
             <h1>The Ultimate <img src="images/fender-spag-logo.jpg" class="logo" alt="Fender" width="175"> Guitar Quiz</h1>
         </header>
@@ -19,27 +19,20 @@
             <button class="start-button" id="startQuizButton">Start</button>
         </section>
         <section class="quiz-section">
-            <h3 id="questionNumber">Question 1 of 10</h3>
-            <h2 id="question"><strong>Q:</strong> To accommodate a larger logo, Fender enlarged what part of the Stratocaster in late 1965?</h2>
+            <h3 id="questionNum"></h3>
+            <h2 id="question"></h2>
             <div class="quiz-choices">
-                <input type="radio" id="choices" class="choices" value="0">Bridge
-                <br>
-                <input type="radio" id="choices" class="choices" value="1">Pickguard
-                <br>
-                <input type="radio" id="choices" class="choices" value="2">Headstock
-                <br>
-                <input type="radio" id="choices" class="choices" value="3">Body
-                <br>
             </div>
         </section>
         <section class="results-section">
             <h2>Final Score</h2>
-            <h3 class="final-score">10/10</h3>
-            <button class="start-button" id="startQuizButton">Try Again</button>
+            <h3 id="finalScore"></h3>
+            <div id="result_msg"></div>
+            <button class="start-button" id="tryAgain">Try Again</button>
         </section>
     </div>
     <script src="scripts/jquery-2.1.4.min.js"></script>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>

@@ -15,13 +15,28 @@
             <h1>The Ultimate <img src="images/fender-spag-logo.jpg" class="logo" alt="Fender" width="175"> Guitar Quiz</h1>
         </header>
         <section class="start-section">
-            <p>For over sixty years Fender guitars have been well known for their extreme versatility, classic looks, and powerful sound. Test your knowledge of this iconic American guitar manufacturer with the following quiz.</p>
+            <h2>For over sixty years Fender guitars have been well known for their extreme versatility, classic looks, and powerful sound. Test your knowledge of this iconic American guitar manufacturer with the following quiz.</h2>
             <button class="start-button" id="startQuizButton">Start</button>
         </section>
         <section class="quiz-section">
-            <p>Q: To accommodate a larger logo decal, Fender enlarged what part of the Stratocaster in late 1965?</p>
+            <h3 id="questionNumber">Question 1 of 10</h3>
+            <h2 id="question"><strong>Q:</strong> To accommodate a larger logo, Fender enlarged what part of the Stratocaster in late 1965?</h2>
+            <div class="quiz-choices">
+                <input type="radio" id="choices" class="choices" value="0">Bridge
+                <br>
+                <input type="radio" id="choices" class="choices" value="1">Pickguard
+                <br>
+                <input type="radio" id="choices" class="choices" value="2">Headstock
+                <br>
+                <input type="radio" id="choices" class="choices" value="3">Body
+                <br>
+            </div>
         </section>
-        <section class="results-section"></section>
+        <section class="results-section">
+            <h2>Final Score</h2>
+            <h3 class="final-score">10/10</h3>
+            <button class="start-button" id="startQuizButton">Try Again</button>
+        </section>
     </div>
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/script.js"></script>

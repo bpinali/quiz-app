@@ -58,7 +58,7 @@ $(document).ready(function () {
         } else {
             //continue to next question
             questionNum++;
-            questionDisplay();
+            displayQuestions();
         }
     });
 
